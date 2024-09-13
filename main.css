@@ -1,0 +1,364 @@
+/* Media Query */
+@media screen and (max-width: 600px){
+  body{
+    font-size: 1.2em;
+    overflow-x: hidden; /* Evita a rolagem lateral */
+  }
+}
+
+/* Geral */
+.container {  
+    display: grid;  
+    grid-gap: 5px;  
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);  
+}
+html,
+body{
+    height: 1800px;
+    margin: 0;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Evita a rolagem lateral */
+}
+
+main {
+    flex: 1;
+}
+
+a:link,
+a:visited {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Href */
+.barra{
+  margin-top: 30vh;
+  position: static;
+  text-align: center;
+}
+
+.barra a {
+  margin-left: 1%;
+  margin-right: 1%;
+  color: #704D34;
+  transition: all 0.4s;
+  margin-bottom: 1vh;
+  font-size: 1.1em;
+}
+
+a:hover{
+  opacity: 0.3;
+}
+
+/* Footer */
+:root{
+  --color-neutral-0: #0e0c0c;
+  --color-neutral-10: #171717;
+  --color-neutral-30: #a8a29e;
+  --color-neutral-40: #47141D;
+  --color-neutral-60: #E9BCC4;
+  --color-neutral-70: #D4AF37;
+  --color-neutral-80: #F1ECEC;
+}
+
+footer{
+  width: 100%;
+  color: var( --color-neutral-40);
+}
+
+.footer-link{
+  text-decoration: none;
+}
+
+#footer_content{
+  background-color: var(--color-neutral-60);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1{
+  margin-bottom: 0.75rem;
+}
+
+#footer_social_media{
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: white;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+#footer_social_media .footer-link:hover{
+  opacity: 0.3;
+}
+
+#footer_social_media .footer-link:hover i{
+  font-size: 1.25rem;
+}
+
+#instagram{
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+.footer-list{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.footer-list .footer-link{
+  color: var(--color-neutral-30);
+  transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover{
+  color: #7f37c9;
+}
+
+#footer_subscribe{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#footer_subscribe p{
+  color: var(--color-neutral-30);
+}
+
+#input_group{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+}
+
+#input_group input{
+  all: unset;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+#input_group button{
+  background-color: #7f37c9;
+  border: none;
+  color: var(--color-neutral-70);
+  padding: 0px 1.25rem;
+  font-size: 1.125rem;
+  height: 100%;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+#input_group button:hover{
+  opacity: 0.8;
+}
+
+#footer_copyright{
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-neutral-60);
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  font-weight: 100;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  #footer_content{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 426) {
+  #footer_content{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+  }
+}
+
+/* Box */
+.boxcinza{
+  width: 100%;
+  height: 29vh;
+  background-color: #e7e1e1;
+  position: absolute;
+  z-index: -9;
+}
+
+.box_auxiliarcinza{
+  width: 100%;
+  height: 29vh;
+  background-color: #e7e1e1;
+  position: absolute;
+  z-index: -10;
+}
+
+.boxCarrosselDourada{  
+  border: 20px solid #ae9a63;
+}
+  
+.boxDentroCarrossel{
+  background-color: var(--color-neutral-80);
+}
+
+/* Icones */
+#instagram1{
+  width: 35px;
+  transition: all 0.4s;
+}
+
+#instagram1:hover{
+  opacity: 0.3;
+ }
+
+/* Fontes */
+.montserrat-uniquifier {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.moderustic-uniquifier {
+  font-family: "Moderustic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.kanit-thin {
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.kanit-extralight {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.kanit-light {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kanit-medium {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kanit-semibold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.kanit-bold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.kanit-extrabold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.kanit-black {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.kanit-thin-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.kanit-extralight-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.kanit-light-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.kanit-regular-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.kanit-medium-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.kanit-semibold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.kanit-bold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.kanit-extrabold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.kanit-black-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.raleway-uniquifier {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
